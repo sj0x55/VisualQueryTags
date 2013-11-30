@@ -45,17 +45,22 @@ $.fn.queryTags = function(options) {
 		});
 
 		$input.keypress(function(e) {
-			if (e.which == 13 && this.value !== '') {
-				if (this.value === '(' || this.value === '((' || this.value === '(((') {
-					for (var i = 0; i < this.value.split('').length; i++) {
-						_openTagsGroup($tagsContainer);
+			if (e.which == 13) {
+				if (this.value !== '') {
+					if (this.value === '(' || this.value === '((' || this.value === '(((') {
+						for (var i = 0; i < this.value.split('').length; i++) {
+							_openTagsGroup($tagsContainer);
+						}
+					}
+					else if (this.value === ')') {
+						_closeTagsGroup();
+					}
+					else {
+						addTag(this.value);
 					}
 				}
-				else if (this.value === ')') {
-					_closeTagsGroup();
-				}
 				else {
-					addTag(this.value);
+					_closeTagsGroup();
 				}
 
 				this.value = '';
