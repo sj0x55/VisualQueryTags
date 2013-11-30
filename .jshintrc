@@ -1,0 +1,29 @@
+{
+	"globals": {
+		"console" : false,
+		"jquery"  : false
+	},
+	"browser"   : true,
+	"jquery"    : true,
+
+	"bitwise"   : false,
+	"boss"      : true,
+	"immed"     : true,
+	"indent"    : 4,
+	"latedef"   : true,
+	"newcap"    : false,
+	"noarg"     : true,
+	"noempty"   : true,
+	"smarttabs" : true,
+	"undef"     : true,
+
+	"unused"    : false,
+	"quotmark"  : false,
+	"camelcase" : false,
+	"eqeqeq"    : false,
+	"maxlen"    : 999,
+	"nonew"     : false,
+	"onevar"    : false,
+	"trailing"  : false,
+	"white"     : false
+}
