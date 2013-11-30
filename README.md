@@ -1,7 +1,7 @@
 Example using:
 
 	$(function(){
-		var queryTags = $('.queryTags').queryTags({
+		$('.queryTags').queryTags({
 			sorting: true
 		});
 
