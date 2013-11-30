@@ -1,5 +1,4 @@
-<!-- Example using -->
-<script type="text/javascript">
+Example using:
 	$(function(){
 		var queryTags = $('.queryTags').queryTags({
 			sorting: true
@@ -9,4 +8,3 @@
 			$('.queryTags').queryTags().destroy();
 		})
 	});
-</script>
