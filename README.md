@@ -1,4 +1,5 @@
 Example using:
+
 	$(function(){
 		var queryTags = $('.queryTags').queryTags({
 			sorting: true
