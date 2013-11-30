@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="queryTags"></div>
+	<div class="queryTagsDestroy">Destroy</div>
+
+	<script type="text/javascript" src="scripts.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var queryTags = $('.queryTags').queryTags({
+				sorting: true
+			});
+
+			$('.queryTagsDestroy').click(function() {
+				$('.queryTags').queryTags().destroy();
+			})
+		});
+	</script>
+</body>
+</html>
